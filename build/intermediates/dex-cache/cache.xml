@@ -1,3 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
+        <dex dex="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.3.0_87feb6f8b05a9f9bbe0b4e7c718cbb1be87f8141.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tarun\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\pre-dexed\debug\okio-1.6.0_3546add89f77d207d429cc4fbc980d6649e2455c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tarun\Documents\NewP5\XYZReader\libs\volley.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="c68094cbd011a3f9dccbfe16e77a2cf43622e277">
+        <dex dex="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\pre-dexed\debug\volley_389cc15f97c5e2c538f58285b283ea11dcf9bc27.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\exploded-aar\com.android.support\support-v13\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="8813bdcf7583107c4873150075d17c8072ec50cf">
+        <dex dex="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\pre-dexed\debug\internal_impl-23.3.0_338232b277a63855fcf4b45a28986305477a92a4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.3.0_c96da4cef437a31d983c994137a6f5bf3be33c79.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.3.0_e0dbeb38ba94a0d2a234d47755fc028f340311ea.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\exploded-aar\com.android.support\support-v13\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="a809555a2599054c3dcd1bf82b089315ac3a11df">
+        <dex dex="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\pre-dexed\debug\com.android.support-support-v13-23.3.0_965592e280f7721f79ea380746dc17ebd2eb861c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\pre-dexed\debug\internal_impl-23.3.0_d9d75cf86d6672747005856a12e4d6901d36a8aa.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tarun\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.1.2\7052283359001bb108753cb0583a887d3bf94c82\okhttp-3.1.2.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="7052283359001bb108753cb0583a887d3bf94c82">
+        <dex dex="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\pre-dexed\debug\okhttp-3.1.2_1b751b15ec8cfdd73cda6ea2b53fe0b6afb3296a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tarun\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\pre-dexed\debug\support-annotations-23.3.0_4ecc505a83677ae35e18cf07fc5f075351f37abe.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\exploded-aar\com.android.support\palette-v7\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="d41792854b7fb173e61c2bfea5044fd47df76114">
+        <dex dex="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\pre-dexed\debug\com.android.support-palette-v7-23.3.0_b03989e6d17f5983fa63e7e0bb99f00bfeaf3932.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.3.0_060dfe6adc21701e83e2b46657e10f4441b3e37d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\pre-dexed\debug\com.android.support-design-23.3.0_152d854fa21ed6eedcfe262627eef6c12807e6fb.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.3.0_762d3e055092dddf7f0b3e478c81e2794dc054da.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\Tarun\Documents\NewP5\XYZReader\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.3.0_14732e3e6a24da5eef46339869dd0fddbb66737a.jar" />
+    </item>
+
+</items>
