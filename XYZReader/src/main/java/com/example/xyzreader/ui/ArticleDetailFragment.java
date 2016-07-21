@@ -12,6 +12,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.ShareCompat;
 import android.support.v7.graphics.Palette;
 import android.text.Html;
@@ -52,6 +53,7 @@ public class ArticleDetailFragment extends Fragment implements
     private ObservableScrollView mScrollView;
     private DrawInsetsFrameLayout mDrawInsetsFrameLayout;
     private ColorDrawable mStatusBarColorDrawable;
+    private CollapsingToolbarLayout mCollapsingtoolbar;
 
     private int mTopInset;
  //   private View mPhotoContainerView;
@@ -124,6 +126,8 @@ public class ArticleDetailFragment extends Fragment implements
                 mTopInset = insets.top;
             }
         });
+
+        mCollapsingtoolbar = (CollapsingToolbarLayout) mRootView.findViewById(R.id.collapsing_toolbar);
 
         mScrollView = (ObservableScrollView) mRootView.findViewById(R.id.scrollview);
         mScrollView.setCallbacks(new ObservableScrollView.Callbacks() {
@@ -233,7 +237,8 @@ public class ArticleDetailFragment extends Fragment implements
                                 Palette p = Palette.generate(bitmap, 12);
                                 mMutedColor = p.getDarkMutedColor(0xFF333333);
                                 mPhotoView.setImageBitmap(imageContainer.getBitmap());
-                                mRootView.findViewById(R.id.meta_bar).setBackgroundColor(mMutedColor);
+                             //   mRootView.findViewById(R.id.meta_bar).setBackgroundColor(mMutedColor);
+                                mCollapsingtoolbar.setContentScrimColor(mMutedColor);
                                 updateStatusBar();
                             }
                         }

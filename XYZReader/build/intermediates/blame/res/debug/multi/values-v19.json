@@ -1,0 +1,49 @@
+[
+    {
+        "outputFile": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\build\\intermediates\\res\\merged\\debug\\values-v19\\values-v19.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 3,
+                    "endColumn": 12,
+                    "endOffset": 144
+                },
+                "from": {
+                    "file": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\src\\main\\res\\values-v19\\styles-v19.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 725,
+                        "endLine": 20,
+                        "endColumn": 12,
+                        "endOffset": 815
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 149,
+                    "endLine": 6,
+                    "endColumn": 12,
+                    "endOffset": 288
+                },
+                "from": {
+                    "file": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\src\\main\\res\\values-v19\\styles-v19.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 823,
+                        "endLine": 24,
+                        "endColumn": 12,
+                        "endOffset": 964
+                    }
+                }
+            }
+        ]
+    }
+]
