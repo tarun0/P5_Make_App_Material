@@ -7,9 +7,9 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endLine": 3,
+                    "endLine": 5,
                     "endColumn": 12,
-                    "endOffset": 144
+                    "endOffset": 283
                 },
                 "from": {
                     "file": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\src\\main\\res\\values-v19\\styles-v19.xml",
@@ -17,31 +17,23 @@
                         "startLine": 19,
                         "startColumn": 4,
                         "startOffset": 725,
-                        "endLine": 20,
+                        "endLine": 22,
                         "endColumn": 12,
-                        "endOffset": 815
+                        "endOffset": 956
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 4,
+                    "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 149,
-                    "endLine": 6,
+                    "startOffset": 288,
+                    "endLine": 8,
                     "endColumn": 12,
-                    "endOffset": 288
+                    "endOffset": 427
                 },
                 "from": {
-                    "file": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\src\\main\\res\\values-v19\\styles-v19.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 823,
-                        "endLine": 24,
-                        "endColumn": 12,
-                        "endOffset": 964
-                    }
+                    "file": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\src\\main\\res\\values-v19\\styles-v19.xml"
                 }
             }
         ]

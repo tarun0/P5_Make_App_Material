@@ -41,7 +41,7 @@ import com.example.xyzreader.data.ArticleLoader;
  * tablets) or a {@link ArticleDetailActivity} on handsets.
  */
 public class ArticleDetailFragment extends Fragment implements
-        LoaderManager.LoaderCallbacks<Cursor>, AppBarLayout.OnOffsetChangedListener {
+        LoaderManager.LoaderCallbacks<Cursor>, AppBarLayout.OnOffsetChangedListener /*, Animation.AnimationListener*/  {
     private static final String TAG = "ArticleDetailFragment";
 
     public static final String ARG_ITEM_ID = "item_id";
@@ -78,19 +78,46 @@ public class ArticleDetailFragment extends Fragment implements
 
     @Override
     public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
-        if  (verticalOffset < -230) {
+        if  (verticalOffset < -180) {
             //Toast.makeText(getActivity().getApplicationContext(), "Test", Toast.LENGTH_SHORT).show();
+           // Animation fadeOutAnimation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.image_fade_out);
             mPhotoView.setVisibility(View.INVISIBLE);
+           // fadeOutAnimation.setAnimationListener(ArticleDetailFragment.this);
+           // mPhotoView.startAnimation(fadeOutAnimation);
            // mRootView.findViewById(R.id.meta_bar).setBackgroundColor(mMutedColor);
+            if (mMutedColor != 0xFF333333)
             mCollapsingtoolbar.setBackgroundColor(mMutedColor);
 
         } else {
             mPhotoView.setVisibility(View.VISIBLE);
            // mRootView.findViewById(R.id.meta_bar).setBackgroundColor(getResources().getColor(android.R.color.transparent));
             mCollapsingtoolbar.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+           // Animation fadeInAnimation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.image_fade_in);
+           // fadeInAnimation.setAnimationListener(ArticleDetailFragment.this);
+           // mPhotoView.startAnimation(fadeInAnimation);
         }
 
     }
+/*
+    Didn't work good :/
+    @Override
+    public void onAnimationEnd(Animation animation) {
+        if (mPhotoView.getVisibility() == View.VISIBLE)
+        mPhotoView.setVisibility(View.INVISIBLE);
+        else {
+            mPhotoView.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    @Override
+    public void onAnimationStart(Animation animation) {
+
+    }
+
+    @Override
+    public void onAnimationRepeat(Animation animation) {
+
+    }*/
 
     public static ArticleDetailFragment newInstance(long itemId) {
         Bundle arguments = new Bundle();
@@ -150,10 +177,6 @@ public class ArticleDetailFragment extends Fragment implements
         mCollapsingtoolbar = (CollapsingToolbarLayout) mRootView.findViewById(R.id.collapsing_toolbar);
         mAppbar = (AppBarLayout) mRootView.findViewById(R.id.appbar);
         mAppbar.addOnOffsetChangedListener(this);
-
-        mCollapsingtoolbar.setTitle("Create Delivery Personnel");
-       // mCollapsingtoolbar.setExpandedTitleColor(Color.TRANSPARENT);
-       // mCollapsingtoolbar.setCollapsedTitleTextColor(Color.rgb(0, 0, 0));
 
         mScrollView = (ObservableScrollView) mRootView.findViewById(R.id.scrollview);
         mScrollView.setCallbacks(new ObservableScrollView.Callbacks() {
@@ -263,6 +286,7 @@ public class ArticleDetailFragment extends Fragment implements
                                 Palette p = Palette.generate(bitmap, 12);
                                 mMutedColor = p.getDarkMutedColor(0xFF333333);
                                 mPhotoView.setImageBitmap(imageContainer.getBitmap());
+
                              //   mRootView.findViewById(R.id.meta_bar).setBackgroundColor(mMutedColor);
                               //  mCollapsingtoolbar.setContentScrimColor(mMutedColor);
                                 updateStatusBar();

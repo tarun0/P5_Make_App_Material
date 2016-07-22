@@ -6,7 +6,9 @@
     app:layout_scrollFlags="scroll|enterAlways"
     android:id="@+id/meta_bar"
     android:layout_gravity="bottom|center_horizontal"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
 
         <TextView
             android:id="@+id/article_title"
@@ -18,7 +20,7 @@
             android:textColor="#fff"
             android:textStyle="bold"
             android:textSize="@dimen/detail_title_text_size"
-            android:lineSpacingMultiplier="0.9" />
+            android:lineSpacingMultiplier="0.9"/>
 
         <TextView
             android:id="@+id/article_byline"
@@ -27,6 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:textStyle="italic"
-            android:textColor="#8fff" />
+            android:textColor="#8fff"
+            android:paddingBottom="4dp"/>
 
 </com.example.xyzreader.ui.MaxWidthLinearLayout>
