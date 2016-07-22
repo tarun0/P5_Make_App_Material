@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar"><!--
-        <item name="android:windowExitTransition">@transition/exits</item>-->
+    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowExitTransition">@transition/exits</item>
         <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowReenterTransition">@transition/exits</item>
     </style>
 
     <style name="Theme.Bacon.Detail" parent="Theme.Bacon">
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowExitTransition">@transition/exits</item>
     </style>
 </resources>

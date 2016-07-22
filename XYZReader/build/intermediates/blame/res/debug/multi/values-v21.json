@@ -1066,33 +1066,33 @@
                     "startLine": 243,
                     "startColumn": 4,
                     "startOffset": 17741,
-                    "endLine": 246,
+                    "endLine": 247,
                     "endColumn": 12,
-                    "endOffset": 17978
-                },
-                "from": {
-                    "file": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\src\\main\\res\\values-v21\\styles.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 247,
-                    "startColumn": 4,
-                    "startOffset": 17983,
-                    "endLine": 250,
-                    "endColumn": 12,
-                    "endOffset": 18194
+                    "endOffset": 18049
                 },
                 "from": {
                     "file": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\src\\main\\res\\values-v21\\styles.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 305,
-                        "endLine": 10,
+                        "startOffset": 57,
+                        "endLine": 6,
                         "endColumn": 12,
-                        "endOffset": 519
+                        "endOffset": 369
                     }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 248,
+                    "startColumn": 4,
+                    "startOffset": 18054,
+                    "endLine": 252,
+                    "endColumn": 12,
+                    "endOffset": 18340
+                },
+                "from": {
+                    "file": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\src\\main\\res\\values-v21\\styles.xml"
                 }
             }
         ]
