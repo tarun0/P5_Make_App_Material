@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:layout_collapseMode="pin"
+    app:layout_scrollFlags="scroll|enterAlways"
     android:id="@+id/meta_bar"
-    android:layout_gravity="bottom|left"
+    android:layout_gravity="bottom|center_horizontal"
     android:orientation="vertical">
 
         <TextView

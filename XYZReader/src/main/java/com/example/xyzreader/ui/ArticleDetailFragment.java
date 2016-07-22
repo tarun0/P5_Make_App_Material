@@ -12,6 +12,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.ShareCompat;
 import android.support.v7.graphics.Palette;
@@ -40,7 +41,7 @@ import com.example.xyzreader.data.ArticleLoader;
  * tablets) or a {@link ArticleDetailActivity} on handsets.
  */
 public class ArticleDetailFragment extends Fragment implements
-        LoaderManager.LoaderCallbacks<Cursor> {
+        LoaderManager.LoaderCallbacks<Cursor>, AppBarLayout.OnOffsetChangedListener {
     private static final String TAG = "ArticleDetailFragment";
 
     public static final String ARG_ITEM_ID = "item_id";
@@ -54,6 +55,7 @@ public class ArticleDetailFragment extends Fragment implements
     private DrawInsetsFrameLayout mDrawInsetsFrameLayout;
     private ColorDrawable mStatusBarColorDrawable;
     private CollapsingToolbarLayout mCollapsingtoolbar;
+    AppBarLayout mAppbar;
 
     private int mTopInset;
  //   private View mPhotoContainerView;
@@ -64,12 +66,30 @@ public class ArticleDetailFragment extends Fragment implements
     private DisplayMetrics dm;
     private int width;
     private int height;
+    private TextView titleView;
+    private TextView bylineView;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
     public ArticleDetailFragment() {
+    }
+
+    @Override
+    public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
+        if  (verticalOffset < -230) {
+            //Toast.makeText(getActivity().getApplicationContext(), "Test", Toast.LENGTH_SHORT).show();
+            mPhotoView.setVisibility(View.INVISIBLE);
+           // mRootView.findViewById(R.id.meta_bar).setBackgroundColor(mMutedColor);
+            mCollapsingtoolbar.setBackgroundColor(mMutedColor);
+
+        } else {
+            mPhotoView.setVisibility(View.VISIBLE);
+           // mRootView.findViewById(R.id.meta_bar).setBackgroundColor(getResources().getColor(android.R.color.transparent));
+            mCollapsingtoolbar.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+        }
+
     }
 
     public static ArticleDetailFragment newInstance(long itemId) {
@@ -128,6 +148,12 @@ public class ArticleDetailFragment extends Fragment implements
         });
 
         mCollapsingtoolbar = (CollapsingToolbarLayout) mRootView.findViewById(R.id.collapsing_toolbar);
+        mAppbar = (AppBarLayout) mRootView.findViewById(R.id.appbar);
+        mAppbar.addOnOffsetChangedListener(this);
+
+        mCollapsingtoolbar.setTitle("Create Delivery Personnel");
+       // mCollapsingtoolbar.setExpandedTitleColor(Color.TRANSPARENT);
+       // mCollapsingtoolbar.setCollapsedTitleTextColor(Color.rgb(0, 0, 0));
 
         mScrollView = (ObservableScrollView) mRootView.findViewById(R.id.scrollview);
         mScrollView.setCallbacks(new ObservableScrollView.Callbacks() {
@@ -141,7 +167,7 @@ public class ArticleDetailFragment extends Fragment implements
         });
 
         mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
-        mPhotoView.setMaxHeight((int) (height*0.65));
+      //  mPhotoView.setMaxHeight((int) (height*0.65));
      //   mPhotoContainerView = mRootView.findViewById(R.id.photo_container);
 
         mStatusBarColorDrawable = new ColorDrawable(0);
@@ -208,8 +234,8 @@ public class ArticleDetailFragment extends Fragment implements
             return;
         }
 
-        TextView titleView = (TextView) mRootView.findViewById(R.id.article_title);
-        TextView bylineView = (TextView) mRootView.findViewById(R.id.article_byline);
+        titleView = (TextView) mRootView.findViewById(R.id.article_title);
+        bylineView = (TextView) mRootView.findViewById(R.id.article_byline);
         bylineView.setMovementMethod(new LinkMovementMethod());
         TextView bodyView = (TextView) mRootView.findViewById(R.id.article_body);
         bodyView.setTypeface(Typeface.createFromAsset(getResources().getAssets(), "Rosario-Regular.ttf"));
@@ -238,7 +264,7 @@ public class ArticleDetailFragment extends Fragment implements
                                 mMutedColor = p.getDarkMutedColor(0xFF333333);
                                 mPhotoView.setImageBitmap(imageContainer.getBitmap());
                              //   mRootView.findViewById(R.id.meta_bar).setBackgroundColor(mMutedColor);
-                                mCollapsingtoolbar.setContentScrimColor(mMutedColor);
+                              //  mCollapsingtoolbar.setContentScrimColor(mMutedColor);
                                 updateStatusBar();
                             }
                         }
