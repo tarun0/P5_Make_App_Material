@@ -1008,15 +1008,7 @@
                     "endOffset": 16135
                 },
                 "from": {
-                    "file": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\src\\main\\res\\values-v21\\styles.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 816,
-                        "endLine": 19,
-                        "endColumn": 12,
-                        "endOffset": 1047
-                    }
+                    "file": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\src\\main\\res\\values-v21\\styles.xml"
                 }
             },
             {
@@ -1087,22 +1079,30 @@
                     "startLine": 248,
                     "startColumn": 4,
                     "startOffset": 17973,
-                    "endLine": 255,
+                    "endLine": 260,
                     "endColumn": 12,
-                    "endOffset": 18490
+                    "endOffset": 18865
                 },
                 "from": {
-                    "file": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\src\\main\\res\\values-v21\\styles.xml"
+                    "file": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\src\\main\\res\\values-v21\\styles.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endLine": 14,
+                        "endColumn": 12,
+                        "endOffset": 961
+                    }
                 }
             },
             {
                 "to": {
-                    "startLine": 256,
+                    "startLine": 261,
                     "startColumn": 4,
-                    "startOffset": 18495,
-                    "endLine": 259,
+                    "startOffset": 18870,
+                    "endLine": 264,
                     "endColumn": 12,
-                    "endOffset": 18713
+                    "endOffset": 19088
                 },
                 "from": {
                     "file": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\src\\main\\res\\values-v21\\styles.xml"

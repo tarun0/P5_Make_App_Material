@@ -10,6 +10,7 @@ import android.graphics.Color;
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
@@ -286,9 +287,10 @@ public class ArticleDetailFragment extends Fragment implements
                                 Palette p = Palette.generate(bitmap, 12);
                                 mMutedColor = p.getDarkMutedColor(0xFF333333);
                                 mPhotoView.setImageBitmap(imageContainer.getBitmap());
-
-                             //   mRootView.findViewById(R.id.meta_bar).setBackgroundColor(mMutedColor);
-                              //  mCollapsingtoolbar.setContentScrimColor(mMutedColor);
+                                /* Some gradient to make title and date visible on light colored background */
+                               mRootView.findViewById(R.id.meta_bar).setBackground(new GradientDrawable(
+                                       GradientDrawable.Orientation.BOTTOM_TOP, new int[] {mMutedColor, 0x000}
+                               ));
                                 updateStatusBar();
                             }
                         }

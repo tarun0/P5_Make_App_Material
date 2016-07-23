@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\build\\intermediates\\res\\merged\\debug\\transition-v21\\fragment_article_detail.xml",
-        "source": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\src\\main\\res\\transition-v21\\fragment_article_detail.xml"
-    },
-    {
         "merged": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\build\\intermediates\\res\\merged\\debug\\transition-v21\\exits.xml",
         "source": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\src\\main\\res\\transition-v21\\exits.xml"
     }

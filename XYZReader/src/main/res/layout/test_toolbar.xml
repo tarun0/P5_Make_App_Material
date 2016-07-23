@@ -6,9 +6,7 @@
     app:layout_scrollFlags="scroll|enterAlways"
     android:id="@+id/meta_bar"
     android:layout_gravity="bottom|center_horizontal"
-    android:orientation="vertical"
-    android:layout_marginLeft="8dp"
-    android:layout_marginRight="8dp">
+    android:orientation="vertical">
 
         <TextView
             android:id="@+id/article_title"
@@ -20,16 +18,22 @@
             android:textColor="#fff"
             android:textStyle="bold"
             android:textSize="@dimen/detail_title_text_size"
-            android:lineSpacingMultiplier="0.9"/>
+            android:layout_marginLeft="@dimen/title_margin_start"
+            android:layout_marginRight="@dimen/title_margin_end"
+            android:layout_marginStart="@dimen/title_margin_start"
+            android:layout_marginEnd="@dimen/title_margin_end"/>
 
         <TextView
             android:id="@+id/article_byline"
-            style="?android:attr/textAppearanceSmall"
+            style="@style/TitleTextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:textStyle="italic"
-            android:textColor="#8fff"
-            android:paddingBottom="4dp"/>
+            android:paddingBottom="@dimen/byline_padding_bottom"
+            android:layout_marginLeft="@dimen/title_margin_start"
+            android:layout_marginRight="@dimen/title_margin_end"
+            android:layout_marginStart="@dimen/title_margin_start"
+            android:layout_marginEnd="@dimen/title_margin_end"/>
 
 </com.example.xyzreader.ui.MaxWidthLinearLayout>
