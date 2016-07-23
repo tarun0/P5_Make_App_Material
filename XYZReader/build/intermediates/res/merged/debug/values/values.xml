@@ -210,6 +210,7 @@
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
     <dimen name="appbar_height_detail">240dp</dimen>
     <dimen name="appbar_height_list">112dp</dimen>
+    <dimen name="body_margin_top">4dp</dimen>
     <dimen name="bodytext_margin_left">16dp</dimen>
     <dimen name="bodytext_margin_right">16dp</dimen>
     <dimen name="bodytext_margin_top">16dp</dimen>

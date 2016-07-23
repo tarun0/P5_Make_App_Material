@@ -1081,7 +1081,7 @@
                     "startOffset": 17973,
                     "endLine": 260,
                     "endColumn": 12,
-                    "endOffset": 18865
+                    "endOffset": 18866
                 },
                 "from": {
                     "file": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\src\\main\\res\\values-v21\\styles.xml",
@@ -1091,7 +1091,7 @@
                         "startOffset": 57,
                         "endLine": 14,
                         "endColumn": 12,
-                        "endOffset": 961
+                        "endOffset": 962
                     }
                 }
             },
@@ -1099,10 +1099,10 @@
                 "to": {
                     "startLine": 261,
                     "startColumn": 4,
-                    "startOffset": 18870,
-                    "endLine": 264,
+                    "startOffset": 18871,
+                    "endLine": 265,
                     "endColumn": 12,
-                    "endOffset": 19088
+                    "endOffset": 19165
                 },
                 "from": {
                     "file": "C:\\Users\\Tarun\\Documents\\NewP5\\XYZReader\\src\\main\\res\\values-v21\\styles.xml"

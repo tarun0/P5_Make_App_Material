@@ -6,4 +6,10 @@
 
     <!-- detail -->
     <dimen name="detail_card_max_width">704dp</dimen>
+    <dimen name="title_margin_start">32dp</dimen>
+    <dimen name="title_margin_end">32dp</dimen>
+    <dimen name="body_margin_top">32dp</dimen>
+
+    <dimen name="bodytext_margin_left">32dp</dimen>
+    <dimen name="bodytext_margin_right">32dp</dimen>
 </resources>

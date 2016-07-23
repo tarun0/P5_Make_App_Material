@@ -248,8 +248,8 @@
     <style name="Platform.ThemeOverlay.AppCompat.Light"/>
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowExitTransition">@transition/exits</item>
+        <item name="android:windowReenterTransition">@transition/fadein</item>
         <item name="android:windowContentTransitions">true</item>
-        <item name="android:windowReenterTransition">@transition/exits</item>
         <item name="colorPrimary">@color/theme_primary</item>
         <item name="android:colorPrimaryDark">@color/theme_primary_dark</item>
         <item name="android:colorAccent">@color/theme_accent</item>
@@ -262,5 +262,6 @@
     <style name="Theme.Bacon.Detail" parent="@style/Theme.Bacon">
         <item name="android:windowContentTransitions">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowEnterTransition">@transition/exits</item>
     </style>
 </resources>
